@@ -40,7 +40,30 @@
   text-align: start;
   
 }
+.show-hide button{
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    box-shadow: 4px;
+    cursor: pointer;
+}
+.show-hide button:hover{
+    background-color: white;
+    color: blueviolet;
+}
+.show-hide button:active{
+    background-color: white;
+    color: blueviolet;
+}
+.show-hide p{
 
+    font-size: 1rem;
+    text-align: start;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

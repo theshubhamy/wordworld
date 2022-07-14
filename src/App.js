@@ -8,7 +8,10 @@ function App() {
   const WordOfTheDay = "FORGO";
   const [guesses, setGuesses] = useState([]);
   const [currentWord, setCurrentWord] = useState("");
-
+  const [show, setShow] = useState(false);
+  const showHideHandler = () => {
+    setShow(!show);
+  };
   const backspace = () => {
     setCurrentWord((prev) => prev && prev.slice(0, -1));
   };
@@ -67,12 +70,24 @@ function App() {
             <li>
               <p>Background not changes for incorrect guess </p>
             </li>
+            <li>
+              <p>Press ENTER for check your gusses.</p>
+            </li>
+            <li>
+              <p>Press BACKSPACE for remove character one by one.</p>
+            </li>
           </ul>
         </div>
         {guesses.map((guess) => (
           <WordRow word={guess} result={checkGuess(guess, WordOfTheDay)} />
         ))}
         <WordRow word={currentWord} />
+        <div className="show-hide">
+          <button onClick={showHideHandler}>
+            {show ? "Hide Answer" : "Show Answer"}
+          </button>
+          {show && <p>The Word Of The Day : {WordOfTheDay}</p>}
+        </div>
       </header>
     </div>
   );
