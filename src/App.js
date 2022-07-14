@@ -54,6 +54,11 @@ function App() {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentWord]);
+  useEffect(() => {
+    if (window.innerWidth < 1024) {
+      alert("Please use a larger screen to play this game.");
+    }
+  });
 
   return (
     <div className="App">
