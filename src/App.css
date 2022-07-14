@@ -38,7 +38,10 @@
   font-size: 1rem;
   color: white;
   text-align: start;
-  
+  margin-bottom: 20px;
+}
+.show-hide{
+    margin-top: 20px;
 }
 .show-hide button{
     border: none;
