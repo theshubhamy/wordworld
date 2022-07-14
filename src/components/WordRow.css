@@ -1,0 +1,21 @@
+.word-row span {
+  font-family: monospace;
+  display: inline-block;
+  padding: 0.5rem;
+  border: 1px solid #fff;
+  margin: 0rem 0.50rem 0rem 0.50rem;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color:blueviolet
+}
+
+.word-row {
+    
+  padding-bottom: 0.5rem;
+}
+
